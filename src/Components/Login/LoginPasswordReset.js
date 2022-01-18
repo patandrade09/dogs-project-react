@@ -1,11 +1,7 @@
-import React from 'react'
+import React from 'react';
 
 const LoginPasswordReset = () => {
-    return (
-        <div>
-            Password Reset
-        </div>
-    )
-}
+  return <div></div>;
+};
 
-export default LoginPasswordReset
+export default LoginPasswordReset;

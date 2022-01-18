@@ -1,11 +1,8 @@
-import React from 'react'
+import React from 'react';
 
 const Photo = () => {
-    return (
-        <div>
-            
-        </div>
-    )
-}
+  return <div></div>;
+};
 
-export default Photo
+export default Photo;
+

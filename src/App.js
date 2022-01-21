@@ -8,13 +8,16 @@ import Login from './Components/Login/Login';
 import { UserStorage } from './UserContext';
 import User from './Components/User/User';
 import ProtectedRoute from './Components/Helper/ProtectedRoute';
+import Photo from './Components/Photo/Photo';
+import UserProfile from './Components/User/UserProfile';
 
 function App() {
   return (
-    <div>
+    <div className='App'>
       <BrowserRouter>
         <UserStorage>
           <Header />
+          <main className='AppBody'>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="login/*" element={<Login />} />
@@ -26,7 +29,10 @@ function App() {
                 </ProtectedRoute>
               }
             />
+            <Route path="foto/:id" element={<Photo />} />
+            <Route path="perfil/:user" element={<UserProfile/>} />
           </Routes>
+          </main>
           <Footer />
         </UserStorage>
       </BrowserRouter>
